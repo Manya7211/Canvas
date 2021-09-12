@@ -1,5 +1,4 @@
 var mouseEvent = "";
-var last_position_of_X , last_position_of_Y;
 canvas = document.getElementById("myCanvas");
 ctx = canvas.getContext("2d");
 color = "black";
@@ -26,8 +25,6 @@ function my_mousemove(e) {
         ctx.arc(current_position_of_mouse_X, current_position_of_mouse_Y, radius, 0, 2 * Math.PI);
         ctx.stroke();
     }
-    last_position_of_X = current_position_of_mouse_X;
-    last_position_of_Y = current_position_of_mouse_Y;
 }
 canvas.addEventListener("mouseup",my_mouseup);
 function my_mouseup(e) {
